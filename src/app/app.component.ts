@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-header data-testid="header"></app-header>
-    <main class="container" data-testid="main-content">
+    <app-header data-testid="app-header-container"></app-header>
+    <main class="container" data-testid="app-content-container">
       <router-outlet></router-outlet>
     </main>
-    <app-footer data-testid="footer"></app-footer>
+    <app-footer data-testid="app-footer-container"></app-footer>
   `,
   styles: [`
     main {

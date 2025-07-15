@@ -4,105 +4,105 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-playwright-elements',
   template: `
-    <div class="container" data-testid="playwright-elements-page">
-      <h1 class="page-title" data-testid="playwright-title">Playwright Elements</h1>
+    <div class="container" data-testid="playwrightElements-container">
+      <h1 class="page-title" data-testid="playwrightElements-title-header">Playwright Elements</h1>
       
-      <section data-testid="dropdown-section">
+      <section data-testid="playwrightElements-dropdown-container">
         <h2>Dropdown</h2>
         <mat-form-field appearance="fill">
           <mat-label>Select an option</mat-label>
-          <mat-select data-testid="dropdown">
-            <mat-option value="option1" data-testid="dropdown-option1">Option 1</mat-option>
-            <mat-option value="option2" data-testid="dropdown-option2">Option 2</mat-option>
-            <mat-option value="option3" data-testid="dropdown-option3">Option 3</mat-option>
+          <mat-select data-testid="playwrightElements-options-select">
+            <mat-option value="option1" data-testid="playwrightElements-option1-option">Option 1</mat-option>
+            <mat-option value="option2" data-testid="playwrightElements-option2-option">Option 2</mat-option>
+            <mat-option value="option3" data-testid="playwrightElements-option3-option">Option 3</mat-option>
           </mat-select>
         </mat-form-field>
       </section>
       
-      <section data-testid="radio-section">
+      <section data-testid="playwrightElements-radio-container">
         <h2>Radio Buttons</h2>
-        <mat-radio-group aria-label="Select an option" data-testid="radio-group">
-          <mat-radio-button value="radio1" data-testid="radio1">Radio 1</mat-radio-button>
-          <mat-radio-button value="radio2" data-testid="radio2">Radio 2</mat-radio-button>
-          <mat-radio-button value="radio3" data-testid="radio3">Radio 3</mat-radio-button>
+        <mat-radio-group aria-label="Select an option" data-testid="playwrightElements-options-radioGroup">
+          <mat-radio-button value="radio1" data-testid="playwrightElements-option1-radio">Radio 1</mat-radio-button>
+          <mat-radio-button value="radio2" data-testid="playwrightElements-option2-radio">Radio 2</mat-radio-button>
+          <mat-radio-button value="radio3" data-testid="playwrightElements-option3-radio">Radio 3</mat-radio-button>
         </mat-radio-group>
       </section>
       
-      <section data-testid="checkbox-section">
+      <section data-testid="playwrightElements-checkbox-container">
         <h2>Checkboxes</h2>
         <div>
-          <mat-checkbox data-testid="checkbox1">Checkbox 1</mat-checkbox>
+          <mat-checkbox data-testid="playwrightElements-option1-checkbox">Checkbox 1</mat-checkbox>
         </div>
         <div>
-          <mat-checkbox data-testid="checkbox2">Checkbox 2</mat-checkbox>
+          <mat-checkbox data-testid="playwrightElements-option2-checkbox">Checkbox 2</mat-checkbox>
         </div>
         <div>
-          <mat-checkbox data-testid="checkbox3">Checkbox 3</mat-checkbox>
+          <mat-checkbox data-testid="playwrightElements-option3-checkbox">Checkbox 3</mat-checkbox>
         </div>
       </section>
       
-      <section data-testid="input-section">
+      <section data-testid="playwrightElements-inputs-container">
         <h2>Input Fields</h2>
         <mat-form-field appearance="fill" class="input-field">
           <mat-label>Text Input</mat-label>
-          <input matInput placeholder="Enter text" data-testid="text-input">
+          <input matInput placeholder="Enter text" data-testid="playwrightElements-text-input">
         </mat-form-field>
         
         <mat-form-field appearance="fill" class="input-field">
           <mat-label>Number Input</mat-label>
-          <input matInput type="number" placeholder="Enter number" data-testid="number-input">
+          <input matInput type="number" placeholder="Enter number" data-testid="playwrightElements-number-input">
         </mat-form-field>
         
         <mat-form-field appearance="fill" class="input-field">
           <mat-label>Password Input</mat-label>
-          <input matInput type="password" placeholder="Enter password" data-testid="password-input">
+          <input matInput type="password" placeholder="Enter password" data-testid="playwrightElements-password-input">
         </mat-form-field>
       </section>
       
-      <section data-testid="link-section">
+      <section data-testid="playwrightElements-links-container">
         <h2>Links</h2>
-        <a href="https://www.google.com" target="_blank" data-testid="google-link">Link to Google</a>
+        <a href="https://www.google.com" target="_blank" data-testid="playwrightElements-google-link">Link to Google</a>
       </section>
       
-      <section data-testid="button-section">
+      <section data-testid="playwrightElements-buttons-container">
         <h2>Buttons</h2>
-        <button mat-raised-button color="primary" data-testid="simple-button">Simple Button</button>
-        <button mat-raised-button color="accent" (click)="showAlert()" data-testid="alert-button">Show Alert</button>
+        <button mat-raised-button color="primary" data-testid="playwrightElements-simple-button">Simple Button</button>
+        <button mat-raised-button color="accent" (click)="showAlert()" data-testid="playwrightElements-alert-button">Show Alert</button>
       </section>
       
-      <section data-testid="datepicker-section">
+      <section data-testid="playwrightElements-datePicker-container">
         <h2>Date Picker</h2>
         <mat-form-field appearance="fill">
           <mat-label>Choose a date</mat-label>
-          <input matInput [matDatepicker]="picker" data-testid="date-input">
-          <mat-datepicker-toggle matSuffix [for]="picker" data-testid="date-toggle"></mat-datepicker-toggle>
-          <mat-datepicker #picker data-testid="date-picker"></mat-datepicker>
+          <input matInput [matDatepicker]="picker" data-testid="playwrightElements-date-input">
+          <mat-datepicker-toggle matSuffix [for]="picker" data-testid="playwrightElements-dateToggle-button"></mat-datepicker-toggle>
+          <mat-datepicker #picker data-testid="playwrightElements-datePicker-container"></mat-datepicker>
         </mat-form-field>
       </section>
       
-      <section data-testid="table-section">
+      <section data-testid="playwrightElements-table-container">
         <h2>Table</h2>
-        <table mat-table [dataSource]="tableData" class="mat-elevation-z8" data-testid="data-table">
+        <table mat-table [dataSource]="tableData" class="mat-elevation-z8" data-testid="playwrightElements-data-table">
           <!-- Name Column -->
           <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef data-testid="table-header-name">Name</th>
-            <td mat-cell *matCellDef="let element" [attr.data-testid]="'table-cell-name-' + element.id">{{element.name}}</td>
+            <th mat-header-cell *matHeaderCellDef data-testid="playwrightElements-nameHeader-header">Name</th>
+            <td mat-cell *matCellDef="let element" [attr.data-testid]="'playwrightElements-name-cell-' + element.id">{{element.name}}</td>
           </ng-container>
           
           <!-- Position Column -->
           <ng-container matColumnDef="position">
-            <th mat-header-cell *matHeaderCellDef data-testid="table-header-position">Position</th>
-            <td mat-cell *matCellDef="let element" [attr.data-testid]="'table-cell-position-' + element.id">{{element.position}}</td>
+            <th mat-header-cell *matHeaderCellDef data-testid="playwrightElements-positionHeader-header">Position</th>
+            <td mat-cell *matCellDef="let element" [attr.data-testid]="'playwrightElements-position-cell-' + element.id">{{element.position}}</td>
           </ng-container>
           
           <!-- Department Column -->
           <ng-container matColumnDef="department">
-            <th mat-header-cell *matHeaderCellDef data-testid="table-header-department">Department</th>
-            <td mat-cell *matCellDef="let element" [attr.data-testid]="'table-cell-department-' + element.id">{{element.department}}</td>
+            <th mat-header-cell *matHeaderCellDef data-testid="playwrightElements-departmentHeader-header">Department</th>
+            <td mat-cell *matCellDef="let element" [attr.data-testid]="'playwrightElements-department-cell-' + element.id">{{element.department}}</td>
           </ng-container>
           
-          <tr mat-header-row *matHeaderRowDef="displayedColumns" data-testid="table-header-row"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;" [attr.data-testid]="'table-row-' + row.id"></tr>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" data-testid="playwrightElements-headerRow-container"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;" [attr.data-testid]="'playwrightElements-row-container-' + row.id"></tr>
         </table>
       </section>
     </div>

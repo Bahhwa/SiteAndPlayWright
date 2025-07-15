@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-    <footer data-testid="page-footer">
+    <footer data-testid="footer-container">
       <div class="container">
-        <p data-testid="copyright">&copy; 2024 My Photography. All rights reserved.</p>
+        <p data-testid="footer-copyright-text">&copy; 2025 My Photography. All rights reserved.</p>
       </div>
     </footer>
   `,

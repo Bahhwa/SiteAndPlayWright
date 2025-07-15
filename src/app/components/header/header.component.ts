@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-    <mat-toolbar color="primary" data-testid="nav-toolbar">
-      <span data-testid="site-title">My Photography</span>
+    <mat-toolbar color="primary" data-testid="navigationMenu-toolbar-container">
+      <span data-testid="navigationMenu-title-header">My Photography</span>
       <span class="spacer"></span>
-      <nav data-testid="main-nav">
-        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" data-testid="nav-home">Home</a>
-        <a mat-button routerLink="/gallery" routerLinkActive="active" data-testid="nav-gallery">Gallery</a>
-        <a mat-button routerLink="/contact" routerLinkActive="active" data-testid="nav-contact">Contact</a>
-        <a mat-button routerLink="/playwright-elements" routerLinkActive="active" data-testid="nav-playwright">Playwright Elements</a>
+      <nav data-testid="navigationMenu-main-container">
+        <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" data-testid="navigationMenu-home-link">Home</a>
+        <a mat-button routerLink="/gallery" routerLinkActive="active" data-testid="navigationMenu-gallery-link">Gallery</a>
+        <a mat-button routerLink="/contact" routerLinkActive="active" data-testid="navigationMenu-contact-link">Contact</a>
+        <a mat-button routerLink="/playwright-elements" routerLinkActive="active" data-testid="navigationMenu-playwrightElements-link">Playwright Elements</a>
       </nav>
     </mat-toolbar>
   `,
