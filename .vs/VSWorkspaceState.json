@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\contact",
+    "\\src\\app\\pages\\gallery",
+    "\\src\\app\\pages\\home"
+  ],
+  "SelectedNode": "\\.github",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photographer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Sample Photo 1">
+            <img src="image2.jpg" alt="Sample Photo 2">
+            <img src="image3.jpg" alt="Sample Photo 3">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate photographer who loves capturing moments that tell a story. My work spans portraits, landscapes, and events. I believe in the power of imagery to evoke emotion and preserve memories.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>

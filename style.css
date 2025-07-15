@@ -1,0 +1,131 @@
+﻿# Create HTML and CSS files for a photographer's website
+
+# Define the HTML content
+html_content = """
+<!DOCTYPE html >
+<html lang="en" >
+<head >
+<meta charset="UTF-8" >
+<title > Photographer Portfolio</title >
+<link rel="stylesheet" href="style.css" >
+</head >
+<body >
+<header >
+<h1 > My Photography</h1 >
+<nav >
+<ul >
+<li > <a href="#gallery" > Gallery</a > </li >
+<li > <a href="#about" > About Me</a > </li >
+<li > <a href="#contact" > Contact Me</a > </li >
+</ul >
+</nav >
+</header >
+
+<section id="gallery" >
+<h2 > Gallery</h2 >
+<div class="gallery" >
+<img src="image1.jpg" alt="Sample Photo 1" >
+<img src="image2.jpg" alt="Sample Photo 2" >
+<img src="image3.jpg" alt="Sample Photo 3" >
+</div >
+</section >
+
+<section id="about" >
+<h2 > About Me</h2 >
+<p > Hello! I'm a passionate photographer who loves capturing moments and telling stories through images. Welcome to my portfolio!</p>
+</section >
+
+<section id="contact" >
+<h2 > Contact Me</h2 >
+<form action="#" method="post" >
+<label for="name" > Name:</label > <br >
+<input type="text" id="name" name="name" required > <br >
+<label for="email" > Email:</label > <br >
+<input type="email" id="email" name="email" required > <br >
+<label for="message" > Message:</label > <br >
+<textarea id="message" name="message" rows="5" required > </textarea > <br >
+<input type="submit" value="Send" >
+</form >
+</section >
+
+<footer >
+<p > &copy; 2024 My Photography</p >
+</footer >
+</body >
+</html >
+"""
+
+# Define the CSS content
+css_content = """
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+section {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border: 2px solid #ccc;
+    }
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+"""
+
+# Write the HTML and CSS content to files
+with open("index.html", "w") as html_file:
+html_file.write(html_content)
+
+with open("style.css", "w") as css_file:
+css_file.write(css_content)
+
+print("Website files 'index.html' and 'style.css' have been created.")
