@@ -29,3 +29,6 @@ jobs:
         with:
           folder: dist/photographer-portfolio
           branch: gh-pages
+          cname: ${{ secrets.CNAME }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          clean: true

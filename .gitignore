@@ -1,0 +1,39 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular
+/dist
+/.angular
+/.angular/cache
+
+# IDE
+.idea/
+.vscode/
+*.sw?
+
+# Compiled output
+/tmp
+/out-tsc
+/bazel-out
+
+# Misc
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+.env
+
+# System Files
+.DS_Store
+Thumbs.db
