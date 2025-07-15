@@ -1,0 +1,16 @@
+For a real implementation, you would place actual image files here with names like:
+photo1.jpg
+photo2.jpg
+photo3.jpg
+etc.
+
+For development purposes, you can use placeholder image services like:
+https://picsum.photos/200/300
+https://placeholder.com/
+https://placehold.co/
+
+Example usage in your components:
+Replace the image URLs with something like:
+'https://picsum.photos/id/10/800/600' for photo1.jpg
+'https://picsum.photos/id/11/800/600' for photo2.jpg
+etc.
