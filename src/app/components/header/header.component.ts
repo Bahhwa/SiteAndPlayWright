@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
         <a mat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" data-testid="nav-home">Home</a>
         <a mat-button routerLink="/gallery" routerLinkActive="active" data-testid="nav-gallery">Gallery</a>
         <a mat-button routerLink="/contact" routerLinkActive="active" data-testid="nav-contact">Contact</a>
+        <a mat-button routerLink="/playwright-elements" routerLinkActive="active" data-testid="nav-playwright">Playwright Elements</a>
       </nav>
     </mat-toolbar>
   `,
