@@ -1,9 +1,10 @@
 # Photographer Portfolio - Angular Application
 
-This is an Angular-based photographer portfolio website with three main pages:
+This is an Angular-based photographer portfolio website with four main pages:
 - Home page with a small gallery of 5 photos
 - Gallery page with a larger collection of photos
 - Contact page with a form
+- Playwright Elements page for testing UI components
 
 ## Project Structure
 
@@ -17,7 +18,8 @@ photographer-portfolio/
 │   │   ├── pages/
 │   │   │   ├── home/
 │   │   │   ├── gallery/
-│   │   │   └── contact/
+│   │   │   ├── contact/
+│   │   │   └── playwright-elements/
 │   │   ├── app.component.ts
 │   │   └── app.module.ts
 │   ├── assets/
@@ -26,10 +28,20 @@ photographer-portfolio/
 │   ├── main.ts
 │   ├── polyfills.ts
 │   └── styles.css
+├── PlayWright/
+│   ├── PhotoPortfolioTests.cs
+│   └── UnitTest1.cs
+├── docs/
+│   └── architecture.md
+├── .github/workflows/
 ├── angular.json
 ├── package.json
 └── tsconfig.json
 ```
+
+## Architecture
+
+For detailed information about the application architecture, please see [Architecture Documentation](docs/architecture.md).
 
 ## Setup Instructions
 

@@ -30,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e2a55d0c-91c1-4be2-9005-24d124232b4f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -84,6 +80,10 @@
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-07-15T15:56:04.495Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e2a55d0c-91c1-4be2-9005-24d124232b4f}"
             },
             {
               "$type": "Document",
